@@ -1,0 +1,27 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: url(images/bg.png) no-repeat center top;
+}
+
+ canvas {
+	/*border: 3px solid black;*/
+	margin: 20px auto;
+	display: block;
+	position: relative;
+}
+#playgr img {
+	margin-top: -4px;
+	margin-left: 205px;
+	position: absolute;
+	z-index: 999;
+}
+#play img {
+	position: absolute;
+	margin-top: 147px;
+	margin-left:  560px;
+	 margin-right: auto;
+	 z-index: 999;
+}
