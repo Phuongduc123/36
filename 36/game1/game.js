@@ -4,7 +4,7 @@ class game {
 		this.context = null;
 		this.init();
 		this.loop();
-		
+		this.a=0;
 	}
 	init(){
 		this.canvas = document.createElement('canvas');
@@ -19,14 +19,20 @@ class game {
 	}
 
 	loop(){
-		this.update();
-		this.draw();
-		setTimeout( () => this.loop(),10);
+		if(document.getElementById('play').style.display == 'none'){
+			this.update();
+			this.draw();
+		}
+		
+
+			setTimeout( () => this.loop(),10);
+		
 	}
 
 	
 	update(){
 		this.context.clearRect(CAR_START_X, CAR_START_Y, 1000, 70);
+		this.context.clearRect(STATION_START_X-85,STATION_START_Y-108, 1000, 109);
 		this.car.update();
 		this.array.update();
 		this.handles.update();

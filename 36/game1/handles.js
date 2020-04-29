@@ -1,22 +1,20 @@
 class handles {
-    constructor(game) {
-        this.game = game;
+    constructor (game){
+        this.game = game ;
         this.checks = [];
         this.listenKeyBoard();
+        
         this.checked();
         this.num = -1;
     }
-    checked() {
-        for (let i = 0; i < 5; i++) {
-            this.checks[i] = 0;
-        }
+    checked(){
+       for(let i=0; i< 5; i++){
+           this.checks[i]=false;
+       }
     }
-    listenKeyBoard() {
-        document.addEventListener('keydown', (event) => {
-            //console.log(event.keyCode);
-            //console.log(this.game.car.x);
-            //console.log(this.num);
-            var j = event.keyCode - 48;
+    listenKeyBoard(){
+		document.addEventListener('keydown', (event) => {
+			var j = event.keyCode - 48;
             this.num = j;
             if (j == 32 - 48) this.game.car.start = true;
             else
@@ -26,29 +24,53 @@ class handles {
                 SPEED = 1;
             } else {
                 this.checks[(this.game.car.x - 50) / 100 - 1] = -1;
-
-            }
-        });
+			}
+		});
     }
-    update() {
-        if (this.game.car.x == this.game.array.stations[5].x) {
-            //this.game.canvas.style.display = 'none';
-            console.log('asc');
+   
+    update(){
+       /*if(this.game.car.x == this.game.array.stations[5].x){
+           //this.game.canvas.style.display = 'none';
+           console.log('asc');
+           document.getElementById('play').style.display = 'block';
+       }*/
+       if(this.game.car.x==150) {
+        document.getElementById('sound1').style.display = 'block';
         }
-        //this.game.canvas.style.display = 'block';
-    }
-    draw() {
-        for (let i = 0; i < 5; i++) {
-            if (this.checks[i] == 1) {
-                this.game.context.font = "40px Georgia";
-                this.game.context.fillText(i + 1, this.game.array.stations[i].x + 20, this.game.array.stations[i].y + 40);
-            } else
-            if (this.checks[i] == -1) {
-                this.game.context.font = "40px Georgia";
-                this.game.context.fillText(this.num, this.game.array.stations[i].x + 20, this.game.array.stations[i].y + 40);
+        else document.getElementById('sound1').style.display = 'none';
+       
+        if(this.game.car.x==250) {
+            document.getElementById('sound2').style.display = 'block';
             }
-        }
+            else document.getElementById('sound2').style.display = 'none';
 
+         if(this.game.car.x==350) {
+             document.getElementById('sound3').style.display = 'block';
+                }
+         else document.getElementById('sound3').style.display = 'none';
+
+         if(this.game.car.x==450) {
+            document.getElementById('sound4').style.display = 'block';
+            }
+            else document.getElementById('sound4').style.display = 'none';      
+         if(this.game.car.x==550) {
+            document.getElementById('sound5').style.display = 'block';
+                }
+            else document.getElementById('sound5').style.display = 'none'; 
+    }
+    draw(){
+        for(let i = 0; i<5; i++){
+        if(this.checks[i] == 1){
+            this.game.context.font = "40px serif";
+            this.game.context.fillText(i+1,this.game.array.stations[i].x+22,this.game.array.stations[i].y+40);
+        }
+        else
+        if (this.checks[i] == -1) {
+            this.game.context.font = "40px serif";
+            this.game.context.fillText(this.num, this.game.array.stations[i].x + 22, this.game.array.stations[i].y + 40);
+        }
+    }
+    
     }
 
 }

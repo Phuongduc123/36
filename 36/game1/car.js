@@ -3,7 +3,7 @@ class car {
 		this.game = game;
 		this.image = null;
 		this.isImageLoaded = false;
-		this.start = false;
+		//this.start = false;
 
 		this.x = CAR_START_X;
 		this.y = CAR_START_Y;
@@ -18,10 +18,11 @@ class car {
 	}
 	update(){
 
-		if(this.start){
+		/*if(this.start){
 		
 			this.x += SPEED;
-		}
+		}*/
+		this.x += SPEED;
 
 	}
 	draw(){

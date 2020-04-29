@@ -25,3 +25,45 @@ body {
 	 margin-right: auto;
 	 z-index: 999;
 }
+
+#sound1 img {
+	position: absolute;
+	margin-top: 110px;
+	margin-left:  300px;
+	 margin-right: auto;
+	 z-index: 999;
+	 
+}
+#sound2 img {
+	position: absolute;
+	margin-top: 110px;
+	margin-left:  400px;
+	 margin-right: auto;
+	 z-index: 999;
+	 
+}
+#sound3 img {
+	position: absolute;
+	margin-top: 110px;
+	margin-left:  500px;
+	 margin-right: auto;
+	 z-index: 999;
+	 
+}
+#sound4 img {
+	position: absolute;
+	margin-top: 110px;
+	margin-left:  600px;
+	 margin-right: auto;
+	 z-index: 999;
+	 
+}
+#sound5 img {
+	position: absolute;
+	margin-top: 110px;
+	margin-left:  700px;
+	 margin-right: auto;
+	 z-index: 999;
+}
+
+	
