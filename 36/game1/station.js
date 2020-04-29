@@ -11,7 +11,7 @@ class station {
 	loadImage(){
 		this.image = new Image;
 
-		this.image.src = 'images/station.png';
+		this.image.src = 'images/tramblue.png';
 	}
 	update(){
 		if(this.x == this.game.car.x ){

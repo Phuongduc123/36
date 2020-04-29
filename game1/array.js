@@ -16,13 +16,14 @@ class array{
 
 	createStations() {
 		let a = 0;
-		for(let i = 0; i < 7; i++){
-			this.x = TRAM_START_X + a;
-			this.y = TRAM_START_Y;
+		for(let i = 0; i < 8; i++){
+			this.x = STATION_START_X + a;
+			this.y = STATION_START_Y;
 			let newStation = new station(this.game,this.x,this.y);
-			a+=120;
+			a+=100;
 			this.stations.push(newStation);
 		}
+		this.stations[4].image.src = 'images/tram.png';
 	}
 
 	draw() {
