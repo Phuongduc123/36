@@ -1,0 +1,191 @@
+
+body {
+	background: url(images/bg.png)  ;
+	 
+	
+}
+
+
+#box1 {
+	position: absolute;
+	cursor: pointer;
+	top: 120px;
+	left: 230px;
+
+  }
+
+  #box2 {
+	position: absolute;
+	cursor: pointer;
+	top: 150px;
+	left: 400px;
+	
+  }
+  #box3 {
+	position: absolute;
+	cursor: pointer;
+	top: 180px;
+	left: 570px;
+  }
+  #box4 {
+	position: absolute;
+	cursor: pointer;
+	top: 210px;
+	left: 740px;
+
+  }
+  #box5 {
+	position: absolute;
+	cursor: pointer;
+	top: 240px;
+	left: 910px;
+  }
+  .dropbox1x {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin: 435px 25px 5px 300px;
+	padding: 10px;
+	/*border: 5px solid black;*/
+	left: 100px;
+  }
+.dropbox2x {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin: 435px 25px 5px 425px;
+	padding: 10px;
+	/*border: 5px solid black;*/
+	left: 100px;
+  }
+  .dropbox3x {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin: 435px 25px 5px 550px;
+	padding: 10px;
+	/*border: 5px solid black;*/
+	left: 100px;
+  }
+  .dropbox4x {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin: 435px 25px 5px 675px;
+	padding: 10px;
+	/*border: 5px solid black;*/
+	left: 100px;
+  }
+  .dropbox5x {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	margin: 435px 25px 5px 800px;
+	padding: 10px;
+	/*border: 5px solid black;*/
+	left: 100px;
+  }
+  .head {
+	position: absolute;
+
+	 	
+	top: 440px;
+	left: 275px;
+
+  }
+ 
+#bgl{
+	background: url(images/bgl.png);
+	height: 660px;
+	width: 196px;
+	top: 0px;
+	left: 0px;
+	position: absolute;
+}
+#track{
+	position: absolute;
+	left: 175px;
+	top: 550px;
+}
+#note1{
+	position: absolute;
+	
+	top: 562px;
+	left: 420px;
+}
+#note2{
+	position: absolute;
+	
+	top: 562px;
+	left: 545px;
+	display: none;
+}
+#note3{
+	position: absolute;
+	
+	top: 562px;
+	left: 675px;
+	display: none;
+}
+#note4{
+	position: absolute;
+	
+	top: 562px;
+	left: 800px;
+	display: none;
+}
+#note5{
+	position: absolute;
+	
+	top: 562px;
+	left: 930px;
+	display: none;
+}
+#level{
+	position: absolute;
+	left: 450px;
+	top: 20px;
+}
+#ball1{
+	position: absolute;
+	left: 460px;
+	top: 30px;
+}
+#ball2{
+	position: absolute;
+	left: 484px;
+	top: 30px;
+}
+#ball3{
+	position: absolute;
+	left: 508px;
+	top: 30px;
+}
+#playgr{
+	position: absolute;
+	left: 195px;
+	top: 70px;
+}
+#play{
+	position: absolute;
+	cursor: pointer;
+	left: 542px;
+	top: 220px;
+}
+#sound{
+	position: absolute;
+	cursor: pointer;
+	left: 279px;
+	top: 81px;
+}
+#back{
+	position: absolute;
+	cursor: pointer;
+	top: 25px;
+	left: 230px;
+}
+
+
+
+
+

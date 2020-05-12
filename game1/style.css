@@ -23,6 +23,7 @@ body {
 	margin-top: 147px;
 	margin-left:  560px;
 	 margin-right: auto;
+	 cursor: pointer;
 	 z-index: 999;
 }
 

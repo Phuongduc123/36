@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>DragEvent Example</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="physics.js"></script>
+      <style>
+      
+      </style>
+   </head>
+   <body>
+     
+      <img id = "back" src="images/back.png" onclick="Back()" alt="">
+      <img id = "sound" onclick="Sound()" src="images/sound.png" >
+      <div id = "level">
+         <img src="images/level.png" alt="">
+      </div>
+      <div id = "ball1">
+         <img src="images/ball.png" alt="">
+      </div>
+      <div id = "ball2">
+         <img src="images/ball.png" alt="">
+      </div>
+      <div id = "ball3">
+         <img src="images/ball.png" alt="">
+      </div>
+      <div id = "track">
+         <img src="images/track.png" alt="">
+      </div>
+      <div class = "note">
+         <img id = "note1" src="images/trackNote.png" alt="">
+         <img id = "note2" src="images/trackNote.png" alt="">
+         <img id = "note3" src="images/trackNote.png" alt="">
+         <img id = "note4" src="images/trackNote.png" alt="">
+         <img id = "note5" src="images/trackNote.png" alt="">
+      </div>
+ 
+      <!-- Drop Target 1 -->
+    
+      
+ 
+         <img id="box5"
+         src="images/box5.png" 
+               ondragstart="dragstartHandler(event)"
+               
+               draggable="true">
+ 
+ 
+      <!-- Drop Target 2 -->
+      <div id ="drop5" class="dropbox5x"
+           
+           ondragover="dragoverHandler(event)"
+           ondrop="dropHandler(event,this)">
+ 
+      </div>
+      <!-- Drop Target 1 -->
+      
+     
+ 
+         <img id="box4"
+         src="images/box4.png" 
+               ondragstart="dragstartHandler(event)"
+               
+               draggable="true">
+ 
+      
+ 
+      <!-- Drop Target 2 -->
+      <div id ="drop4" class="dropbox4x"
+           
+           ondragover="dragoverHandler(event)"
+           ondrop="dropHandler(event,this)">
+ 
+      </div>
+      <!-- Drop Target 1 -->
+      
+      
+ 
+         <img id="box3"
+         src="images/box3.png" 
+               ondragstart="dragstartHandler(event)"
+               
+               draggable="true">
+ 
+ 
+      <!-- Drop Target 2 -->
+      <div id ="drop3" class="dropbox3x"
+           
+           ondragover="dragoverHandler(event)"
+           ondrop="dropHandler(event,this)">
+ 
+      </div>
+      
+ 
+   
+ 
+      <!-- Drop Target 1 -->
+      
+      
+ 
+         <img id="box2"
+         src="images/box2.png" 
+               ondragstart="dragstartHandler(event)"
+               
+               draggable="true">
+ 
+      
+ 
+      <!-- Drop Target 2 -->
+      <div id ="drop2" class="dropbox2x"
+           
+           ondragover="dragoverHandler(event)"
+           ondrop="dropHandler(event,this)">
+ 
+      </div>
+ 
+     
+         <img id="box1"
+         src="images/box1.png" 
+               ondragstart="dragstartHandler(event)"
+               
+               draggable="true"
+               ondrag="dragHandler(event)">
+               
+ 
+ 
+      <!-- Drop Target 2 -->
+      <div class="dropbox1x"
+      id = "drop1"
+           
+           ondragover="dragoverHandler(event)"
+           ondrop="dropHandler(event,this)">
+ 
+      </div>
+      <div id = "box0" class = "head"  >
+         <img src="images/train.png" alt="">
+
+      </div>
+      
+      <div id = "bgl" class = "bgll"  >
+         
+      </div>
+       <div id = playgr>
+         <img src="images/playgr.png" alt="">
+      </div>
+      <div id = play onclick="playGame()">
+         <img src="images/play.png" alt="">
+      </div> 
+
+     
+      <script>
+     
+</script>
+
+ 
+ 
+   </body>
+</html>
