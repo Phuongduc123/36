@@ -1,12 +1,24 @@
-function Play(element){
-    document.getElementById('play').style.display = 'none';
-    document.getElementById('playgr').style.display = 'none';
-    let Sounds = document.getElementsByTagName('ul');
-   for(let i = 0; i < Sounds.length; i++){
-       Sounds[i].style.display = 'none';
-   }
-}
-function Sound(){
-    var snd = new Audio(src ="audios/sound1.mp3");
-    snd.play();
-}
+function Back(){
+	history.back();
+ }
+ var T = setInterval(move,10);
+ pos = 350;
+ x=1;
+ function move(){
+	var car = document.getElementById("car");
+	var sta2 = document.getElementById("sta2");
+	pos +=x;
+	if (car.style.left== sta2.style.left){
+			x=0;
+	}
+	
+	
+	
+	car.style.left = pos + "px";
+	
+	
+
+ }
+ function change(){
+	 document.getElementById('sta2').src = "images/tram.png";
+ }

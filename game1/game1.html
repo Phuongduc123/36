@@ -1,48 +1,40 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Game1</title>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <ul id = "sound1" onclick = "Sound()" >
-        <img src="images/sound.png" >
-        
-    </ul>
-    <ul id = "sound2" onclick = "Sound()">
-        <img src="images/sound.png" >
-    </ul>
-    <ul id = "sound3"  onclick = "Sound()">
-        <img src="images/sound.png" >
-    </ul>
-    <ul id = "sound4" onclick = "Sound()">
-        <img src="images/sound.png" >
-    </ul>
-    <ul id = "sound5" onclick = "Sound()">
-        <img src="images/sound.png" >
-    </ul>
-    <div id = "playgr" onclick = "Sound()">
-        <img src="images/playgr.png">
-    </div>
-    <div id = "play" onclick="Play(this)"> 
-        <img src="images/play.png"  >
-    </div>
-    
-   
-    <script  src="constant.js"></script>
-    <script  src="car.js"></script>
-     <script  src="station.js"></script>
-    <script  src="start.js"></script>
-    <script  src="array.js"></script>
-   
-   <script  src="handles.js"></script>
-  
-    <script id = "game" src="game.js"></script>
-    <script  src="physics.js"></script>
-    
-    
-	
+    <img id = "back" src="images/back.png" onclick="Back()" alt="">
+      <div id = "level" >
+         <img src="images/level.png" alt="">
+      </div>
+      <div id = "ball1">
+         <img src="images/ball.png" alt="">
+      </div>
+      <div id = "ball2">
+         <img src="images/ball.png" alt="">
+      </div>
+      <div id = "ball3">
+         <img src="images/ball.png" alt="">
+      </div>
+
+    <img id = "sta1" src="images/tramblue.png" alt="">
+    <img id = "sta2" src="images/tramblue.png" alt="" onclick="change()">
+    <img id = "sta3" src="images/tramblue.png" alt="">
+    <img id = "sta4" src="images/tramblue.png" alt="">
+    <img id = "sta5" src="images/tramblue.png" alt="">
+    <img id = "sta6" src="images/tramblue.png" alt="">
+    <img id = "sta7" src="images/tramblue.png" alt="">
+    <img id = "start" src="images/start.png" alt="">
+    <img id = "car" src="images/oto.png" alt="">
+    <canvas id = "box1" width="40" height="50"></canvas>
+    <canvas id = "box2" width="40" height="50"></canvas>
+    <canvas id = "box3" width="40" height="50"></canvas>
+    <canvas id = "box4" width="40" height="50"></canvas>
+    <canvas id = "box5" width="40" height="50"></canvas>
 </body>
-	
+<script src="physics.js"></script>
 </html>

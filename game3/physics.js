@@ -70,6 +70,7 @@ function moveBall(){
       ball1.style.left = posB1 + "px";
       
    }
+   
 }
 function note(){
    if(check[0] ==true && check[1]==false){
@@ -90,30 +91,68 @@ function note(){
    }
    
 }
+
 function replay(){
+
+      if(box5.style.left == "-850px"){
+         box5.style.display = "none";
+      }
+      
+     
+      if(box4.style.left == "-725px"){
+         box4.style.display = "none";
+      }
+      
+     
+      if(box3.style.left == "-600px"){
+         box3.style.display = "none";
+      }
+     
+     
+      if(box2.style.left == "-475px"){
+         box2.style.display = "none";
+      }
+      
+     
+      if(box1.style.left == "-350px"){
+         box1.style.display = "none";
+      }
+     
+      if(box0.style.left == "50px"){
+         box0.style.display = "none";
+      }
+
+      
+     
    
     if(box5.style.left == "-850px" && level < 3){
       for(let i =0; i <5 ; i++) {check[i] = false;}
       if(level <2){
-       document.getElementById('box0').style.top = "440px";
-       document.getElementById('box0').style.left = "275px";
+       box0.style.top = "440px";
+       box0.style.left = "275px";
       }
        level ++;
       if(level==1){
          
-         document.getElementById('box1').style.top = "-200px";   
-         document.getElementById('box1').style.left = "400px";
-         document.getElementById('box2').style.top = "-200px";   
-         document.getElementById('box2').style.left = "-100px";
-         document.getElementById('box3').style.top = "-280px";   
-         document.getElementById('box3').style.left = "-50px";
-         document.getElementById('box4').style.top = "-280px";   
-         document.getElementById('box4').style.left = "150px";
-         document.getElementById('box5').style.top = "-300px";   
-         document.getElementById('box5').style.left = "-650px";
+         box1.style.top = "-200px";   
+         box1.style.left = "400px";
+         box2.style.top = "-200px";   
+         box2.style.left = "-100px";
+         box3.style.top = "-280px";   
+         box3.style.left = "-50px";
+         box4.style.top = "-280px";   
+         box4.style.left = "150px";
+         box5.style.top = "-300px";   
+         box5.style.left = "-650px";
          //level ++;
          pos0 = 275;
          pos1 = 0;
+         box0.style.display = "block";
+         box1.style.display = "block";
+         box2.style.display = "block";
+         box3.style.display = "block";
+         box4.style.display = "block";
+         box5.style.display = "block";
       }
       
       if(level==2){
@@ -131,6 +170,12 @@ function replay(){
          //level ++;
          pos0 = 275;
          pos1 = 0;
+         box0.style.display = "block";
+         box1.style.display = "block";
+         box2.style.display = "block";
+         box3.style.display = "block";
+         box4.style.display = "block";
+         box5.style.display = "block";
       }
     }
 }
@@ -150,23 +195,13 @@ function dragstartHandler(evt) {
     evt.dataTransfer.setData("MyDraggedElementId", evt.target.id);
   }
    
-  // dragging ...
+ 
   function dragHandler(evt) {
-     //showLog("The p element is being dragged");
-     /*var elementId = evt.dataTransfer.getData("MyDraggedElementId");
-     console.log(elementId)
-      document.getElementById('box1').style.left = evt.clientX -300  + 'px';
-      document.getElementById('box1').style.top = evt.clientY -200+ 'px';*/
+    
   }
    
    
-  // --------- Handlers for 'Drop Target' ------------------
-   
-  /*function ondragenterHandler()  {
-     showLog("The p element enter drop-target");
-  }*/
-   
-  // When 'over' you can 'release mouse' to 'drop'.
+ 
   function dragoverHandler(evt) {
       evt.preventDefault(); // Important!!
   }
