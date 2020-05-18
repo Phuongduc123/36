@@ -1,95 +1,126 @@
-*{
-	margin: 0;
-	padding: 0;
-}
-body {
-	background: url(images/bg.png) no-repeat;
-}
-canvas {
-	
-	margin: 20px auto;
-	display: block;
-}
-#car{
-	left: 350px;
-	top: 350px;
-	position: absolute;
-}
-#sta1,#sta2,#sta3,#sta4,#sta5,#sta6,#sta7{
-	top: 250px;
-	position: absolute;
-	/*margin-left: 50px;*/
-}
-#start{
-	position: absolute;
-	left: 200px;
-	top: 355px;
-}
-#sta1{
-	left: 300px;
-}
-#sta2{
-	left: 430px;
-}
-#sta3{
-	left: 560px;
-}
-#sta4{
-	left: 690px;
-}
-#sta5{
-	left: 820px;
-}
-#sta6{
-	left: 950px;
-}
-#sta7{
-	left: 1080px;
-}
-#box1,#box2,#box3,#box4,#box5{
-	position: absolute;
-	border: 2px solid red;
-	top: 240px;
-}
-#box1{
-	left: 310px;
-}
-#box2{
-	left: 440px;
-}
-#box3{
-	left: 570px;
-}
-#box4{
-	left: 700px;
-}
-#box5{
-	left: 830px;
-}
-#level{
-	position: absolute;
-	left: 450px;
-	top: 20px;
-}
-#ball1{
-	position: absolute;
-	left: 460px;
-	top: 30px;
-}
-#ball2{
-	position: absolute;
-	left: 484px;
-	top: 30px;
-}
-#ball3{
-	position: absolute;
-	left: 508px;
-	top: 30px;
-}
-#back{
-	position: absolute;
-	cursor: pointer;
-	top: 25px;
-	left: 230px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background: url(images/bg.png) no-repeat;
+}
+
+canvas {
+    margin: 20px auto;
+    display: block;
+}
+
+#car {
+    left: 200px;
+    top: 350px;
+    position: absolute;
+}
+
+#sta1,
+#sta2,
+#sta3,
+#sta4,
+#sta5,
+#sta6,
+#sta7 {
+    top: 250px;
+    position: absolute;
+    /*margin-left: 50px;*/
+}
+
+#start {
+    position: absolute;
+    left: 200px;
+    top: 355px;
+}
+
+#sta1 {
+    left: 300px;
+}
+
+#sta2 {
+    left: 430px;
+}
+
+#sta3 {
+    left: 560px;
+}
+
+#sta4 {
+    left: 690px;
+}
+
+#sta5 {
+    left: 820px;
+}
+
+#sta6 {
+    left: 950px;
+}
+
+#sta7 {
+    left: 1080px;
+}
+
+#box1,
+#box2,
+#box3,
+#box4,
+#box5 {
+    position: absolute;
+    border: 2px solid white;
+    top: 240px;
+}
+
+#box1 {
+    left: 310px;
+}
+
+#box2 {
+    left: 440px;
+}
+
+#box3 {
+    left: 570px;
+}
+
+#box4 {
+    left: 700px;
+}
+
+#box5 {
+    left: 830px;
+}
+
+#level {
+    position: absolute;
+    left: 450px;
+    top: 20px;
+}
+
+#ball3 {
+    position: absolute;
+    left: 508px;
+    top: 30px;
+}
+
+#ball2 {
+    position: absolute;
+    left: 484px;
+    top: 30px;
+}
+
+#ball1 {
+    position: absolute;
+    left: 460px;
+    top: 30px;
+}
+
+#back {
+    position: absolute;
+    cursor: pointer;
+    top: 25px;
+    left: 230px;
+}
