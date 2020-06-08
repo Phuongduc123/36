@@ -3,12 +3,23 @@
 	padding: 0;
 }
 #game1 {
-    width: 150px;
+    width: 20%;
 	margin-right: 10px;
     margin-bottom: 10px;
     cursor: pointer;
     display: flex;
 }
 #game2 {
+    width: 20%;
+	margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: flex;
+}
+#game3 {
+    width: 20%;
+	margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
     display: flex;
 }
