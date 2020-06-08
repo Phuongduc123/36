@@ -196,8 +196,10 @@ function dragstartHandler(evt) {
   }
    
  
-  function dragHandler(evt) {
+  function dragHandler(evt,element) {
+    console.log(evt.x,evt.y)
     
+
   }
    
    
@@ -208,9 +210,9 @@ function dragstartHandler(evt) {
    
   function dropHandler(evt,element) {
      evt.preventDefault(); // Important!!
-   console.log(element.id)
+   //console.log(element.id)
      var elementId = evt.dataTransfer.getData("MyDraggedElementId");
-     console.log(elementId)
+     //console.log(elementId)
      console.log(document.getElementById(elementId).style.left);
      if(elementId == 'box1' && element.id == 'drop1'){
       document.getElementById(elementId).style.left = "0px"
