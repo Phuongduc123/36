@@ -1,6 +1,8 @@
 gdjs.New_32scene4Code = {};
 gdjs.New_32scene4Code.GDspeakerObjects1= [];
 gdjs.New_32scene4Code.GDspeakerObjects2= [];
+gdjs.New_32scene4Code.GDbackbuttonObjects1= [];
+gdjs.New_32scene4Code.GDbackbuttonObjects2= [];
 gdjs.New_32scene4Code.GDplatformObjects1= [];
 gdjs.New_32scene4Code.GDplatformObjects2= [];
 gdjs.New_32scene4Code.GDgrasshopperObjects1= [];
@@ -46,7 +48,7 @@ gdjs.New_32scene4Code.condition1IsTrue_0 = {val:false};
 gdjs.New_32scene4Code.condition2IsTrue_0 = {val:false};
 
 
-gdjs.New_32scene4Code.mapOfGDgdjs_46New_9532scene4Code_46GDspeakerObjects1Objects = Hashtable.newFrom({"speaker": gdjs.New_32scene4Code.GDspeakerObjects1});gdjs.New_32scene4Code.eventsList0x5b70b8 = function(runtimeScene) {
+gdjs.New_32scene4Code.mapOfGDgdjs_46New_9532scene4Code_46GDspeakerObjects1Objects = Hashtable.newFrom({"speaker": gdjs.New_32scene4Code.GDspeakerObjects1});gdjs.New_32scene4Code.mapOfGDgdjs_46New_9532scene4Code_46GDbackbuttonObjects1Objects = Hashtable.newFrom({"backbutton": gdjs.New_32scene4Code.GDbackbuttonObjects1});gdjs.New_32scene4Code.eventsList0x5b70b8 = function(runtimeScene) {
 
 {
 
@@ -99,6 +101,25 @@ gdjs.New_32scene4Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButton
 }}
 if (gdjs.New_32scene4Code.condition1IsTrue_0.val) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "translate_tts.mp3", false, 100, 1);
+}}
+
+}
+
+
+{
+
+gdjs.New_32scene4Code.GDbackbuttonObjects1.createFrom(runtimeScene.getObjects("backbutton"));
+
+gdjs.New_32scene4Code.condition0IsTrue_0.val = false;
+gdjs.New_32scene4Code.condition1IsTrue_0.val = false;
+{
+gdjs.New_32scene4Code.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.New_32scene4Code.mapOfGDgdjs_46New_9532scene4Code_46GDbackbuttonObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.New_32scene4Code.condition0IsTrue_0.val ) {
+{
+gdjs.New_32scene4Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}}
+if (gdjs.New_32scene4Code.condition1IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.stopGame(runtimeScene);
 }}
 
 }
@@ -500,6 +521,8 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.New_32scene4Code.GDspeakerObjects1.length = 0;
 gdjs.New_32scene4Code.GDspeakerObjects2.length = 0;
+gdjs.New_32scene4Code.GDbackbuttonObjects1.length = 0;
+gdjs.New_32scene4Code.GDbackbuttonObjects2.length = 0;
 gdjs.New_32scene4Code.GDplatformObjects1.length = 0;
 gdjs.New_32scene4Code.GDplatformObjects2.length = 0;
 gdjs.New_32scene4Code.GDgrasshopperObjects1.length = 0;

@@ -1,6 +1,8 @@
 gdjs.New_32scene2Code = {};
 gdjs.New_32scene2Code.GDspeakerObjects1= [];
 gdjs.New_32scene2Code.GDspeakerObjects2= [];
+gdjs.New_32scene2Code.GDbackbuttonObjects1= [];
+gdjs.New_32scene2Code.GDbackbuttonObjects2= [];
 gdjs.New_32scene2Code.GDplatformObjects1= [];
 gdjs.New_32scene2Code.GDplatformObjects2= [];
 gdjs.New_32scene2Code.GDgrasshopperObjects1= [];
@@ -96,6 +98,19 @@ gdjs.New_32scene2Code.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButton
 }}
 if (gdjs.New_32scene2Code.condition1IsTrue_0.val) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "translate_tts.mp3", false, 100, 1);
+}}
+
+}
+
+
+{
+
+
+gdjs.New_32scene2Code.condition0IsTrue_0.val = false;
+{
+gdjs.New_32scene2Code.condition0IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}if (gdjs.New_32scene2Code.condition0IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.stopGame(runtimeScene);
 }}
 
 }
@@ -446,6 +461,8 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.New_32scene2Code.GDspeakerObjects1.length = 0;
 gdjs.New_32scene2Code.GDspeakerObjects2.length = 0;
+gdjs.New_32scene2Code.GDbackbuttonObjects1.length = 0;
+gdjs.New_32scene2Code.GDbackbuttonObjects2.length = 0;
 gdjs.New_32scene2Code.GDplatformObjects1.length = 0;
 gdjs.New_32scene2Code.GDplatformObjects2.length = 0;
 gdjs.New_32scene2Code.GDgrasshopperObjects1.length = 0;

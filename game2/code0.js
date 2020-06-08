@@ -1,6 +1,8 @@
 gdjs.New_32sceneCode = {};
 gdjs.New_32sceneCode.GDspeakerObjects1= [];
 gdjs.New_32sceneCode.GDspeakerObjects2= [];
+gdjs.New_32sceneCode.GDbackbuttonObjects1= [];
+gdjs.New_32sceneCode.GDbackbuttonObjects2= [];
 gdjs.New_32sceneCode.GDplatformObjects1= [];
 gdjs.New_32sceneCode.GDplatformObjects2= [];
 gdjs.New_32sceneCode.GDgrasshopperObjects1= [];
@@ -46,7 +48,7 @@ gdjs.New_32sceneCode.condition1IsTrue_0 = {val:false};
 gdjs.New_32sceneCode.condition2IsTrue_0 = {val:false};
 
 
-gdjs.New_32sceneCode.mapOfGDgdjs_46New_9532sceneCode_46GDspeakerObjects1Objects = Hashtable.newFrom({"speaker": gdjs.New_32sceneCode.GDspeakerObjects1});gdjs.New_32sceneCode.mapOfGDgdjs_46New_9532sceneCode_46GDstartObjects1Objects = Hashtable.newFrom({"start": gdjs.New_32sceneCode.GDstartObjects1});gdjs.New_32sceneCode.eventsList0x5b70b8 = function(runtimeScene) {
+gdjs.New_32sceneCode.mapOfGDgdjs_46New_9532sceneCode_46GDspeakerObjects1Objects = Hashtable.newFrom({"speaker": gdjs.New_32sceneCode.GDspeakerObjects1});gdjs.New_32sceneCode.mapOfGDgdjs_46New_9532sceneCode_46GDstartObjects1Objects = Hashtable.newFrom({"start": gdjs.New_32sceneCode.GDstartObjects1});gdjs.New_32sceneCode.mapOfGDgdjs_46New_9532sceneCode_46GDbackbuttonObjects1Objects = Hashtable.newFrom({"backbutton": gdjs.New_32sceneCode.GDbackbuttonObjects1});gdjs.New_32sceneCode.eventsList0x5b70b8 = function(runtimeScene) {
 
 {
 
@@ -138,6 +140,25 @@ gdjs.New_32sceneCode.GDplayObjects1.createFrom(runtimeScene.getObjects("play"));
 }{for(var i = 0, len = gdjs.New_32sceneCode.GDgrasshopperObjects1.length ;i < len;++i) {
     gdjs.New_32sceneCode.GDgrasshopperObjects1[i].addPolarForce(0, 50, 1);
 }
+}}
+
+}
+
+
+{
+
+gdjs.New_32sceneCode.GDbackbuttonObjects1.createFrom(runtimeScene.getObjects("backbutton"));
+
+gdjs.New_32sceneCode.condition0IsTrue_0.val = false;
+gdjs.New_32sceneCode.condition1IsTrue_0.val = false;
+{
+gdjs.New_32sceneCode.condition0IsTrue_0.val = gdjs.evtTools.input.cursorOnObject(gdjs.New_32sceneCode.mapOfGDgdjs_46New_9532sceneCode_46GDbackbuttonObjects1Objects, runtimeScene, true, false);
+}if ( gdjs.New_32sceneCode.condition0IsTrue_0.val ) {
+{
+gdjs.New_32sceneCode.condition1IsTrue_0.val = gdjs.evtTools.input.isMouseButtonReleased(runtimeScene, "Left");
+}}
+if (gdjs.New_32sceneCode.condition1IsTrue_0.val) {
+{gdjs.evtTools.runtimeScene.stopGame(runtimeScene);
 }}
 
 }
@@ -456,6 +477,8 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.New_32sceneCode.GDspeakerObjects1.length = 0;
 gdjs.New_32sceneCode.GDspeakerObjects2.length = 0;
+gdjs.New_32sceneCode.GDbackbuttonObjects1.length = 0;
+gdjs.New_32sceneCode.GDbackbuttonObjects2.length = 0;
 gdjs.New_32sceneCode.GDplatformObjects1.length = 0;
 gdjs.New_32sceneCode.GDplatformObjects2.length = 0;
 gdjs.New_32sceneCode.GDgrasshopperObjects1.length = 0;
