@@ -14,7 +14,7 @@ class car {
 		this.image.onload = () => {
 			this.isImageLoaded = true;
 		}
-		this.image.src = 'images/oto.png';
+		this.image.src = 'images/car.png';
 	}
 	update(){
 

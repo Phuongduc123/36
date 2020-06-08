@@ -11,7 +11,7 @@ class station {
 		this.image = new Image;
 		this.image1 = new Image;
 
-		this.image.src = 'images/tramblue.png';
+		this.image.src = 'images/stationblue.png';
 		this.image1.src = 'images/request.png';
 	}
 	update(){

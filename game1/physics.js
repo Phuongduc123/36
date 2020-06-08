@@ -9,7 +9,7 @@ x_ball = 4;
 move_ball3 = false;
 move_ball2 = false;
 move_ball1 = false;
-dem = 1;
+count = 1;
 
 function move() {
     var car = document.getElementById("car");
@@ -22,16 +22,16 @@ function move() {
             ctx1.clearRect(0, 0, 40, 50);
 
         }
-        dem -= 1;
-        if (dem == 3) {
+        count -= 1;
+        if (count == 3) {
             move_ball3 = true;
             pos_ball = 508
         }
-        if (dem == 2) {
+        if (count == 2) {
             move_ball2 = true;
             pos_ball = 484
         }
-        if (dem == 1) {
+        if (count == 1) {
             move_ball1 = true;
             pos_ball = 460;
         }
@@ -67,10 +67,10 @@ function move() {
     pos += x;
     car.style.left = pos + "px";
 
-    if (dem != 0)
-        var text_ball = "ball" + dem;
+    if (count != 0)
+        var text_ball = "ball" + count;
 
-    var ball_stop = 900 - 3 - 24 * (3 - dem);
+    var ball_stop = 900 - 3 - 24 * (3 - count);
     console.log(text_ball);
     var ball = document.getElementById(text_ball);
     console.log("move_ball", move_ball1, move_ball2, move_ball3);
@@ -89,10 +89,10 @@ function move() {
 }
 
 function change() {
-    document.getElementById('sta2').src = "images/tram.png";
-    document.getElementById('sta1').src = "images/tram.png";
-    document.getElementById('sta3').src = "images/tram.png";
-    document.getElementById('sta4').src = "images/tram.png";
-    document.getElementById('sta5').src = "images/tram.png";
+    document.getElementById('sta2').src = "images/station.png";
+    document.getElementById('sta1').src = "images/station.png";
+    document.getElementById('sta3').src = "images/station.png";
+    document.getElementById('sta4').src = "images/station.png";
+    document.getElementById('sta5').src = "images/station.png";
 
 }

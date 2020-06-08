@@ -4,7 +4,7 @@ class game {
 		this.context = null;
 		this.init();
 		this.loop();
-		this.a=0;
+		this.a = 0;
 	}
 	init(){
 		this.canvas = document.createElement('canvas');

@@ -9,7 +9,7 @@ class handles {
     }
     checked(){
        for(let i=0; i< 5; i++){
-           this.checks[i]=false;
+           this.checks[i] = false;
        }
     }
     listenKeyBoard(){
@@ -61,13 +61,15 @@ class handles {
     draw(){
         for(let i = 0; i<5; i++){
         if(this.checks[i] == 1){
+            let space_temp1 = 22;
+            let space_temp2 = 40;
             this.game.context.font = "40px serif";
-            this.game.context.fillText(i+1,this.game.array.stations[i].x+22,this.game.array.stations[i].y+40);
+            this.game.context.fillText(i + 1,this.game.array.stations[i].x + space_temp1,this.game.array.stations[i].y + space_temp2);
         }
         else
         if (this.checks[i] == -1) {
             this.game.context.font = "40px serif";
-            this.game.context.fillText(this.num, this.game.array.stations[i].x + 22, this.game.array.stations[i].y + 40);
+            this.game.context.fillText(this.num, this.game.array.stations[i].x + space_temp1, this.game.array.stations[i].y + space_temp2);
         }
     }
     
